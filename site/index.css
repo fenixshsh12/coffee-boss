@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 0% 0%;
+    background-image: url('https://static.wixstatic.com/media/nsplsh_dc358862c3174629bf03bd3ed674b222~mv2.jpg/v1/fill/w_1864,h_939,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_dc358862c3174629bf03bd3ed674b222~mv2.jpg');
+    width: 99%;
+}
+
+header {
+    width: 99%;
+    background-color: rgb(220, 132, 50);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid rgb(220, 132, 50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #000000;
+
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    margin-top: 7%;
+    margin-bottom: 1%;
+
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+
+}
+
+button {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    background-color: #3b1d18;
+
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.secao-sobre {
+    background-color: rgb(220, 132, 50);
+    padding: 60px 20px;
+    text-align: center;
+    width: 99%;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-sobre {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.conteudo-sobre h1 {
+    font-size: 2.5em;
+    /* Ajuste para um tamanho um pouco menor */
+    margin-bottom: 20px;
+    /* Menor espaçamento */
+    color: #000000;
+    /* Cor de texto mais suave */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Mais negrito para destacar o título */
+}
+
+.conteudo-sobre p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    /* Menor espaçamento entre parágrafos */
+    color: #000000;
+    text-align: justify;
+    /* Justificar o texto para uma melhor aparência */
+}
+
+.conteudo-sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.conteudo-sobre .icons {
+    margin-top: 30px;
+    /* Maior espaçamento do topo */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.conteudo-sobre .icons img {
+    width: 50px;
+    /* Aumenta o tamanho dos ícones */
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.conteudo-sobre .icons img:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail-container {
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    padding-bottom: 10%;
+    border-top: 2px solid transparent;
+    border-radius: 80px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    border-radius: 15px;
+
+}
+
+.thumbnail.active {
+    border-color: #4a2c2a;
+
+}
+
+footer {
+    width: 99%;
+    background-color: rgb(220, 132, 50);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #be740d;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icons a {
+    display: block;
+    width: 40px;
+
+    height: 40px;
+    border-radius: 50%;
+
+    overflow: hidden;
+    border: 2px solid transparent;
+
+    transition: border-color 0.3s;
+}
+
+footer .social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+footer .social-icons a:hover {
+    border-color: #b07a59;
+
+}
+
+footer .informacoes-contato {
+    font-size: 14px;
+
+}
+
+footer .informacoes-contato p {
+    margin: 5px 0;
+}
+
+h2 {
+    color: #4a2c2a;
+}
+
+.mensagem-inspiracional {
+    color: #ffffff;
+}
+
+.secao-inspiracional {
+    background-color: #fff7e6;
+    /* Cor de fundo clara, ajustada conforme necessário */
+    padding: 200px 20px;
+    text-align: center;
+    width: 99%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-image: url('https://static.wixstatic.com/media/nsplsh_5468315376372d31344c38~mv2.jpg/v1/fill/w_1864,h_841,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_5468315376372d31344c38~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-inspiracional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alinha o conteúdo ao início do container */
+    height: 400px;
+    color: #fff;
+    font-family: 'Woodland', sans-serif;
+    margin-left: 20px;
+}
+
+.mensagem-inspiracional {
+    font-size: 3em;
+    /* Tamanho grande para as frases */
+    margin: 15px 0;
+    /* Espaçamento vertical entre as frases */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* Sombreamento para contraste */
+    font-weight: bold;
+    max-width: 600px;
+    /* Ajusta a largura máxima para evitar que as frases se estiquem demais */
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #be740d;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #be740d;
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #be740d;
+}
+
+button:active {
+    transform: scale(0.9);
+}
